@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+
+    <body>
+        <h1>Greetings</h1>
+        <button onclick="greet()">Check</button>
+
+        <script>
+        function greet(){
+            var greeting;
+            var hour= new Date().getHours;
+            if (hour<12){
+                document.write("Good Morning");
+            }
+            else if (hour<18){
+                document.write("Good Afternoon");
+            }
+            else if (hour<21){
+                document.write("Good Evening");
+            }
+            else {
+                document.write("Good Night");
+            }
+        }
+        </script>
+    </body>
+</html>
